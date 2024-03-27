@@ -4,7 +4,7 @@ UTILS_O			= $(UTILS:.cpp=.o)
 
 TESTS_PATH		= tests/
 MANDATORY		= strlen strcpy strcmp write read strdup
-BONUS			= atoi_base list_push_front list_size # list_sort list_remove_if
+BONUS			= atoi_base list_push_front list_size list_sort list_remove_if
 ALL				= $(MANDATORY) $(BONUS)
 ALL				:= $(addprefix ft_, $(addsuffix _test.cpp, $(ALL)))
 ALL				:= $(addprefix $(TESTS_PATH), $(ALL))
